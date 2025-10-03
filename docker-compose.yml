@@ -2,7 +2,7 @@ services:
   site:
     build:
       context: ./
-      dockerfile: Dockerfile-site
+      dockerfile: Dockerfile
     volumes:
       - ./:/usr/src/app/
     working_dir: /usr/src/app/
