@@ -2,9 +2,7 @@
 
 
 Для восстановления записей из дампа необходимо создать базу данных, если ее еще
-нет.
-
-Пробще всего создать новую базу данных через web-интерфейс:
+нет. Проще всего создать новую базу данных через web-интерфейс:
 
 1.  Открыть [http://0.0.0.0:9088](http://0.0.0.0:9088) в браузере.
 1.  В выпадающем списке **Select database** выбрать **Add Database**.
@@ -40,7 +38,7 @@ reindexer_tool --dsn cproto://0.0.0.0:6534/mydb --filename mydb.rxdump
     ```sql
     SELECT *
     FROM items
-    where name = 'Ландыши';
+    WHERE name = 'Ландыши';
     ```
 
 1.  Нажмите **Execute**.
@@ -56,5 +54,5 @@ reindexer_tool --dsn cproto://0.0.0.0:6534/mydb --filename mydb.rxdump
 1.  Введите запрос одной строкой:
 
     ```sh
-    Reindexer> SELECT * FROM items where name = 'Ландыши';
+    Reindexer> SELECT * FROM items WHERE name = 'Ландыши';
     ```
