@@ -1,4 +1,18 @@
-title: reindexer-test
+title: Reindexer
 
 chapters:
-  - index.md
+  - install.md
+  - configure.md
+  - load-dump.md
+  - query.md
+
+slug: build
+
+backend_config:
+  mkdocs:
+    use_title: true
+    use_chapters: true
+    use_headings: true
+    mkdocs.yml:
+      theme:
+        name: material

@@ -1,8 +1,9 @@
-version: '3'
-
 services:
-  foliant:
-    build: .
+  site:
+    build:
+      context: ./
+      dockerfile: Dockerfile-site
     volumes:
-      - .:/usr/src/app
-    working_dir: /usr/src/app
+      - ./:/usr/src/app/
+    working_dir: /usr/src/app/
+    command: make site

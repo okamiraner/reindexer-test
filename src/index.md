@@ -1,3 +1,1 @@
-# Welcome to reindexer-test
-
-Your content goes here.
+# Get started

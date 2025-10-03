@@ -1,1 +1,6 @@
-foliant-env
+__folianttmp__
+/build.mkdocs
+/foliant-env
+.python-version
+.DS_Store
+*.log
