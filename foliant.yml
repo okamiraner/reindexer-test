@@ -4,7 +4,6 @@ chapters:
   - install.md
   - configure.md
   - load-dump.md
-  - query.md
 
 slug: build
 
@@ -14,5 +13,23 @@ backend_config:
     use_chapters: true
     use_headings: true
     mkdocs.yml:
+      markdown_extensions:
+        - admonition
+        - pymdownx.highlight
+        - pymdownx.details
+        - pymdownx.superfences
       theme:
         name: material
+        palette:
+          - scheme: default
+            primary: "rgba(0, 0, 0, 0.87)"
+            accent: light blue
+            toggle:
+              icon: material/weather-night
+              name: Switch to dark mode
+          - scheme: slate
+            toggle:
+              icon: material/weather-sunny
+              name: Switch to light mode
+preprocessors:
+  - admonitions
